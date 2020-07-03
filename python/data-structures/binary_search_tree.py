@@ -112,14 +112,14 @@ class BinarySearchTree:
 		# Improvements since prior lesson
 
 		# Protect against deleting a node not found in the tree
-		if node == None or self.find(node.value)==None:
+		if node == None or self.find(node.value) == None:
 			print("Node to be deleted not found in the tree!")
 			return None 
 		## -----
 
 		# returns the node with min value in tree rooted at input node
 		def min_value_node(n):
-			current=n
+			current = n
 			while current.left_child!=None:
 				current=current.left_child
 			return current
