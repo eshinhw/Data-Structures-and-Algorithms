@@ -1,4 +1,6 @@
-def create_array (size=10,max=50):
+# quick sort
+
+def create_array (size=5,max=10):
     from random import randint
     return [randint(0,max) for _ in range(size)]
 
@@ -18,8 +20,7 @@ def partition (arr, low, high):
         if arr[j] <= pivot:
             
             i += 1
-            arr[i],arr[j] = arr[j],arr[i]
-            
+            arr[i],arr[j] = arr[j],arr[i]            
     
     arr[i+1],arr[high] = arr[high],arr[i+1]
     
@@ -39,12 +40,6 @@ def quick_sort (arr, low, high):
 
 arr = create_array()
 
-print(arr)
+print(arr) # [9, 4, 9, 5, 8]
 
-print(quick_sort(arr,0,len(arr)-1))
-
-
-
-
-
-            
+print(quick_sort(arr,0,len(arr)-1)) # [4, 5, 8, 9, 9]

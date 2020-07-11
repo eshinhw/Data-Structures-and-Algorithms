@@ -1,7 +1,9 @@
+# merge sort
+
 # constructs randomized array of length 'size', each element
 # is randomly selected from the range 0 up to 'max'
 
-def create_array (size=10,max=50):
+def create_array (size=5,max=10):
     from random import randint
     return [randint(0,max) for _ in range(size)]
 
@@ -24,8 +26,6 @@ def merge (a,b):
         c.extend(a[a_idx:])
     
     return c
-
-
 
 def merge_sort(a):
     
