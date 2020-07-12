@@ -1,4 +1,6 @@
 """
+Heap Sort
+
 heap: ordered binary tree ==> max heap: parent value > child value
 
 1) build max heap: creates max heap from unsorted array
@@ -18,12 +20,6 @@ Time Complexity = O(nlogn)
 build-max-heap = O(n)
 heapify = O(logn), called n-1 times
 """
-
-import bubble_sort
-
-
-
-print(__name__)
 
 def create_array (size=10,max=50):
     from random import randint
@@ -65,5 +61,4 @@ print(a)
 
 a = heap_sort(a)
 
-print(a)
-        
+print()      
